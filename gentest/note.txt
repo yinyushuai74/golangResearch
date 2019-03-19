@@ -1,0 +1,16 @@
+go generate test demo
+使用步骤：
+根目录下go build 生成可执行文件gentest
+将gentest拷贝到$path下
+cd user
+go generate
+
+
+不拷贝的方式：
+go:generate go run $GOPATH/src/golangResearch/gentest/main -type Status
+go generate
+
+goland debug:
+Run - edit Configurations
+working direction: golangResearch/gentest/user
+programer arguments : -type=Status

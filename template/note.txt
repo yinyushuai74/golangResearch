@@ -1,0 +1,6 @@
+{{with .Friends}} {{end}}
+范围内 . 表示.Friends
+template.FuncMap{"emailDeal": EmailDealWith}
+建立emailDeal->EmailDealWith的映射，从而可在template中使用此方法
+an emails {{.|emailDeal}} 使用一个pip ，将.作为emailDeal的参数进行处理
+
